@@ -32,7 +32,7 @@ def buttClick():
     global count
     savedfilename = "screenshot"+str(datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S"))+".jpeg"
     print("Screen shot saved as "+savedfilename)
-    # pygame.image.save(screen, savedfilename)
+    pygame.image.save(screen, savedfilename)  # comment this out if you don't want to keep creating image files
     count = 0
 
 button = Button(
